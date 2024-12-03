@@ -11,8 +11,7 @@
     margin: auto;
     background-color: #121212;
     color: white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem 1rem 5rem 1rem;
 }
 
 .content {
@@ -81,7 +80,7 @@
     color: white;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 3rem;
+    padding: 4rem 1rem 3rem 1rem;
 
     .p-samples{
         display: flex;
@@ -127,9 +126,33 @@
     transition: color 0.3s, text-decoration 0.3s;
 }
 
-@media screen and (max-width: 600px) {
-    .g-main, .g-mainsample{
+
+@media screen and (max-width: 1137px) {
+    .g-main{
+        padding-top: 9rem;
+    }
+}
+@media screen and (max-width: 1077px) {
+ 
+    .g-mainsample{
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .g-main{
+        padding-top: 13rem;
+    }
+}
+
+@media screen and (max-width: 661px) {
+    .g-mainsample{
         max-width: 100%;
+        padding-top: 12rem;
+    }
+
+    .g-nav{
+        font-size: smaller;
     }
 
     .s-item{
@@ -141,5 +164,11 @@
 
     .p-footer {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .g-main{
+        padding-top: 17rem;
     }
 }
