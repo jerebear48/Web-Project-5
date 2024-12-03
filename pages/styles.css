@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-#g-main{
+.g-main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -19,9 +19,13 @@
     width: 100%;
 }
 
+.p-quizcap{
+    text-align: center;
+    font-size: 2rem;
+}
+
 .g-header, .p-section {
-    max-width: 1000px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
@@ -29,16 +33,25 @@
 }
 
 .g-header1, .g-header2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
     font-size: 2rem;
     font-family: "MedievalSharp", cursive;
-    text-align: center;
 }
 
 .p-hometext{
     font-size: 1rem;
     text-align: center;
 }
-    
+
+.p-myUL{
+    list-style-position: inside;
+    padding-left: 1.5rem;
+}
+
 .s-item{
     display: flex;
     flex-wrap: wrap;
@@ -49,11 +62,6 @@
     box-sizing: border-box;
 }
 
-.p-myUL{
-    list-style-position: inside;
-    padding-left: 1.5rem;
-}
-
 .p-footer {
     display: flex;
     flex-wrap: wrap;
@@ -62,9 +70,40 @@
     font-size: 1.5rem;
 }
 
+.g-mainsample{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+
+    .p-samples{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .s-thumbnail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    img{
+        max-width: 100%;
+    }
+}
+
 .g-nav{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .g-nav a{
@@ -81,7 +120,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    #g-main{
+    .g-main, .g-mainsample{
         max-width: 100%;
     }
 
