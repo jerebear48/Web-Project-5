@@ -81,13 +81,13 @@
     width: 100%;
     box-sizing: border-box;
     padding: 4rem 1rem 3rem 1rem;
-
+    
     .p-samples{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    
     .s-thumbnail{
         display: flex;
         flex-direction: column;
@@ -95,10 +95,22 @@
         box-sizing: border-box;
         padding: 10px;
     }
-
+    
     img{
         max-width: 500px;
         max-height: 500px;
+    }
+
+    .p-datasamp{
+        padding-top: 6rem;
+    }
+
+    .p-websamp{
+        padding-top: 13rem;
+    }
+
+    .p-websamp2{
+        padding-top: 2rem;
     }
 }
 
